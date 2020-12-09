@@ -1,0 +1,2 @@
+class ReplyboxController < ApplicationController
+end
