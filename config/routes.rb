@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'top#main'
-  get 'top/main'
+  root 'top#top'
+  get 'top/top'
   resources :questions
   resources :replyboxes, only: [:new, :create, :destroy]
   resources :replys, only: [:show]
