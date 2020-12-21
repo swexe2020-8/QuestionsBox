@@ -1,15 +1,20 @@
 <h1>質問一覧</h1>
 <ul>
   <% @qtitles.each do |qtitle| %>
-    <li><%= link_to qtitle.title, qtitles_show_path(qtitle.id) %></li>
+    <li>
+        <%= link_to qtitle.title, qtitles_show_path(qtitle.id) %>
+        <%= link_to '---[削除]', qtitle_delete_path(qtitle.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
+    </li>
   <% end %>
 </ul>
 
-<h1>トピック新規登録</h1>
+<h1>質問を投稿</h1>
 <%= form_for @newQtitle, :url => {:action => 'create'} do |f| %>
   <%= f.text_field :title %>
   <%= f.submit %>
 <% end %>
+
+
 
 
 

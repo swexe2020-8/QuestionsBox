@@ -1,0 +1,6 @@
+<h1><%= @qtitle.title %></h1>
+<% @meetings.each_with_index do |meeting , idx| %>
+  <p>
+    <%= idx + 1 %>. <%= meeting.name %> : <%= meeting.body %>
+  </p>
+<% end %>
