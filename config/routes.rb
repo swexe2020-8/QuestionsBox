@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'qtitles#index'
   get 'qtitles/index'
-  get 'qtitles/show/:id' => 'qtitle#show', as: :qtitle_show
-  #post 'qtitle/create' => 'qtitle#create'
+  get 'qtitles/show/:id' => 'qtitles#show', as: :qtitles_show
+  post 'qtitles/create' => 'qtitles#create'
   #root 'top#top'
   #get 'top/top'
   #resources :replyboxes, only: [:new, :create, :destroy]
