@@ -1,0 +1,2 @@
+class Qtitle < ApplicationRecord
+end

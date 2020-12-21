@@ -1,0 +1,9 @@
+<h1>質問一覧</h1>
+<ul>
+  <% @qtitles.each do |qtitle| %>
+    <li><%= link_to qtitle.title, qtitle_show_path(qtitle.id) %></li>
+  <% end %>
+</ul>
+
+
+

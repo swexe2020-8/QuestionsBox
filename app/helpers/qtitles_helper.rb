@@ -1,0 +1,2 @@
+module QtitlesHelper
+end
