@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  qid: 1
+  uname: MyString
+  posttime: 2020-12-09 07:13:25
+  title: MyString
+  text: MyText
+
+two:
+  qid: 1
+  uname: MyString
+  posttime: 2020-12-09 07:13:25
+  title: MyString
+  text: MyText
