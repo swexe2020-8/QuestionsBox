@@ -1,18 +1,37 @@
-<h1><%= @qtitle.title %></h1>
-<% @meetings.each_with_index do |meeting , idx| %>
-  <p>
-    <%= idx + 1 %>. <%= meeting.name %> : <%= meeting.body %>
-  </p>
-<% end %>
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <title>質問アプリQbox</title>
+    <link rel="stylesheet" href="css/reverseLNavigation.css">
+</head>
+
+<body>
+    <header id="pageBody">
+      <h2>質問アプリQbox</h2>
+    </header>
+</body>
+
+<main>
+<div id="pageSub">
+    <h1><%= @qtitle.title %></h1>
+    <% @meetings.each_with_index do |meeting , idx| %>
+      <p>
+        <%= idx + 1 %>. <%= meeting.name %> : <%= meeting.body %>
+      </p>
+    <% end %>
+</div>
 
 <br>
-
-<h3>回答書き込み</h3>
-<%= form_for @newmeeting, :url => meeting_create_path do |f| %>
-  <p>名前</p>
-  <p><%= f.text_field :name %></p>
-  <p>本文</p>
-  <p><%= f.text_area :body %></p>
-  <%= f.hidden_field :qtitle_id %>
-  <%= f.submit '回答'%>
-<% end %>
+ <div class="content">
+    <h3>回答書き込み</h3>
+    <%= form_for @newmeeting, :url => meeting_create_path do |f| %>
+      <p>名前</p>
+      <p><%= f.text_field :name %></p>
+      <p>本文</p>
+      <p><%= f.text_area :body %></p>
+      <%= f.hidden_field :qtitle_id %>
+      <%= f.submit '回答'%>
+    <% end %>
+ </div>
+</main>
