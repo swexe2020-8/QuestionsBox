@@ -13,7 +13,7 @@ body{
   position: absolute;
   bottom: -6px;
   left: 0;
-  width: 21.5%;
+  width: 23%;
   height: 6px;
   content: '';
   background: #00cc5b;
@@ -24,6 +24,14 @@ main{
     display: flex;
     margin-top: 10px;
 }
+
+#pageSub{
+    width: 300px;
+    text-align: center;
+    background-color: #33CC99;
+    color: #fff;
+}
+
 .content{
     flex: 1;
     background-color: #eee;
@@ -31,10 +39,18 @@ main{
     margin-left: 10px;
 }
 
-#pageSub{
-    width: 300px;
-    text-align: center;
-    background-color: #2E8B57;
-    color: #fff;
+.box7{
+    padding: 0.5em 1em;
+    margin: 2em 10;
+    color: #474747;
+    background: #339999;
+    border-left: double 9px #000033;
+    border-right: double 9px #000033;
 }
+.box7 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
 

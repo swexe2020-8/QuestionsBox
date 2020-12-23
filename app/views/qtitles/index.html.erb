@@ -8,7 +8,7 @@
 
 <body>
     <header id="pageBody">
-      <h2>質問アプリQbox</h2>
+      <h1>質問アプリQbox</h1>
     </header>
     
     
@@ -27,6 +27,9 @@
         
         
         <div class="content">
+            <div class="box7">
+                <h2>質問してみよう！</h2>
+　　　　　　</div>
             <h2>質問を投稿</h2>
             <%= form_for @newQtitle, :url => {:action => 'create'} do |f| %>
               <%= f.text_field :title %>
